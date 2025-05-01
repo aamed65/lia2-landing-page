@@ -1,0 +1,84 @@
+.program-details {
+  padding: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+.details-content {
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 1rem;
+}
+
+.details-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #6567DF;
+}
+
+.location-section {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.location-section h3 {
+  font-size: 1.1rem;
+  color: #6567DF;
+  margin-bottom: 0.3rem;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.date-item span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.fee-section, .payment-section, .scope-section {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.fee-section h2, .scope-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #6567DF;
+}
+
+.payment-section h3 {
+  font-size: 1.1rem;
+  color: #6567DF;
+  margin-bottom: 0.3rem;
+}
+
+.fee-section p, .payment-section p, .scope-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .details-content {
+    padding: 1.2rem;
+  }
+} 

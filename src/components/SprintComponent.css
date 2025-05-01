@@ -1,0 +1,151 @@
+.sprint-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sprint-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    z-index: 1;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 18%;
+    text-align: center;
+  }
+  
+  .timeline-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.3s ease;
+    max-width: 120px;
+  }
+  
+  .timeline-item.active .timeline-icon {
+    border-color: #6567DF;
+    box-shadow: 0 0 0 3px rgba(101, 103, 223, 0.2);
+    transform: scale(1.1);
+  }
+  
+  .timeline-item.active .timeline-title {
+    color: #6567DF;
+    font-weight: 700;
+  }
+  
+  .timeline-connector {
+    display: none; 
+  }
+  
+  .timeline-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-content h3 {
+    color: #6567DF;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* För mellanstora skärmar */
+  @media (max-width: 1024px) {
+    .sprint-container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+    
+    .timeline {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .timeline::before {
+      display: none;
+    }
+    
+    .timeline-item {
+      width: auto;
+      margin: 0 15px 20px;
+    }
+  }
+  
+  /* För mobila enheter */
+  @media (max-width: 768px) {
+    .timeline {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .timeline-item {
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    
+    .timeline-icon {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+    
+    .timeline-title {
+      max-width: none;
+    }
+  }

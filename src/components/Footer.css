@@ -1,0 +1,272 @@
+/* Footer.css */
+.footer {
+  background-color: #1a1b1e;
+  color: #fff;
+  padding: 60px 0 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  flex: 0 0 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer-brand {
+    flex: 0 0 30%;
+    margin-bottom: 0;
+  }
+}
+
+.company-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.company-name:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #fff;
+}
+
+.footer-brand p {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .footer-sections {
+    flex: 0 0 65%;
+  }
+}
+
+.footer-section {
+  flex: 0 0 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .footer-section {
+    flex: 0 0 48%;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-section {
+    flex: 0 0 30%;
+    margin-bottom: 0;
+  }
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-links a:before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  font-size: 18px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.social-icon {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #405DE6);
+  color: #fff;
+}
+
+.twitter {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.linkedin {
+  background: #0077b5;
+  color: #fff;
+}
+
+.newsletter h4 {
+  margin: 20px 0 15px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.newsletter p {
+  color: #aaa;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form input::placeholder {
+  color: #aaa;
+}
+
+.newsletter-form button {
+  padding: 12px 20px;
+  background: #6567DF;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #5456c7;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}

@@ -1,0 +1,52 @@
+.info-card {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 4rem;
+  margin: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.info-title {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.info-text {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: left;
+}
+
+.read-more-btn {
+  background-color: white;
+  color: #6e8efb;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.read-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+} 
