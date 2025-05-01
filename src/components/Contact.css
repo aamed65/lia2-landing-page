@@ -108,11 +108,14 @@
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form form {
   width: 100%;
   max-width: 400px;
+  box-sizing: border-box;
 }
 
 .form-group {
@@ -135,6 +138,7 @@
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .form-input:focus,
@@ -190,5 +194,62 @@
   .contact-form {
     padding: 1.5rem;
     min-height: 300px;
+    width: 100%;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-label {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .submit-button {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-info {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info > p {
+    font-size: 1rem;
+  }
+
+  .contact-details {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-item {
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-text h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
   }
 } 
