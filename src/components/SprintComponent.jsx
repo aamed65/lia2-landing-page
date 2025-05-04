@@ -18,14 +18,11 @@ const SprintComponent = () => {
       description: "Python för AI, algoritmer och datastrukturer. Introduktion till grundläggande maskininlärningsmodeller.",
       icon: "💻"
     },
-    
     {
       title: "Del 3: Djupinlärning",
       description: "Neurala nätverk och dess tillämpningar. Computer Vision, Natural Language Processing och Generativ AI.",
       icon: "🧠"
     },
-
-
     {
       title: "Avslutning & certifiering",
       description: "Examination och utvärdering. Du får ett certifikat som bevis på din nya kompetens inom AI-utveckling.",
@@ -33,7 +30,11 @@ const SprintComponent = () => {
     }
   ];
   
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  
+  const toggleStep = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
   
   return (
     <div className="sprint-container">
@@ -41,21 +42,26 @@ const SprintComponent = () => {
       
       <div className="timeline">
         {steps.map((step, index) => (
-          <div 
-       key={index} 
-         className={`timeline-item ${index === activeIndex ? 'active' : ''}`}
-         onClick={() => setActiveIndex(index)}
-       >
-       <div className="timeline-icon">{step.icon}</div>
-       <div className="timeline-title">{step.title}</div>
-       {index < steps.length - 1 && <div className="timeline-connector"></div>}
-      </div>
-      ))}
+          <div key={index} className="timeline-item-container">
+            <div 
+              className={`timeline-item ${expandedIndex === index ? 'active' : ''}`}
+              onClick={() => toggleStep(index)}
+            >
+              <div className="timeline-icon">{step.icon}</div>
+              <div className="timeline-title">{step.title}</div>
+            </div>
+            
+            <div className={`timeline-content-mobile ${expandedIndex === index ? 'expanded' : ''}`}>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
       
-      <div className="timeline-content">
-        <h3>{steps[activeIndex].title}</h3>
-        <p>{steps[activeIndex].description}</p>
+      <div className="timeline-content-desktop">
+        <h3>{steps[expandedIndex || 0].title}</h3>
+        <p>{steps[expandedIndex || 0].description}</p>
       </div>
     </div>
   );

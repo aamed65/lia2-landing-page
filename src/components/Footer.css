@@ -270,3 +270,154 @@
 .footer-bottom a:hover {
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+    background-color: #1a1b1e;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-brand {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .company-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .company-name:after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: #aaa;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .footer-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .footer-section {
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .section-title:after {
+    width: 25px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-list li {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    color: #ddd;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-links li {
+    margin-bottom: 0;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+    padding-left: 0;
+    color: #ddd;
+  }
+
+  .footer-links a:before {
+    display: none;
+  }
+
+  .newsletter {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+  }
+
+  .newsletter h4 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .newsletter p {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+    color: #aaa;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .newsletter-form input {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+  }
+
+  .newsletter-form button {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .footer-bottom {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+}
